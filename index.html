@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@media screen and (max-width:600px) {
+			body {
+				display: flex;
+				height: 100vh;
+				align-items: center;
+				justify-content: center;
+				background-color: violet !important;
+			}
+
+			#div {
+				background-color: aqua !important;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 550px !important;
+				margin: auto !important;
+
+			}
+
+			#demo {
+
+				font-size: 34px !important;
+				font-weight: 900;
+				font-family: cursive;
+				background-color: aliceblue !important;
+				margin: auto !important;
+			}
+		}
+
+		@media screen and (min-width:600px) {
+			#div {
+				background-color: aqua !important;
+				margin: auto;
+			}
+
+			#demo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 34px !important;
+				font-weight: 900;
+				font-family: cursive;
+				background-color: aliceblue !important;
+				width: 100% !important;
+			}
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="div">
+		<p id="demo"></p>
+	</div>
+
+
+	<script src="index.js"></script>
+	<script src="operators.js"></script>
+	<script src="demo.js"></script>
+</body>
+
+</html>
