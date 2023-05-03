@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(240, 210, 13);
+            font-size: 3rem;
+            font-family: cursive;
+            font-weight: 900;
+        }
+
+        .Para,
+        #Output {
+            color: rgb(246, 243, 243);
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(125, 127, 127);
+            border: 4px ridge red;
+            margin: auto;
+            margin-top: 3rem;
+        }
+
+        .input {
+            font-size: 1.6rem;
+            margin: auto;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 10, 19);
+            padding: 10px 0px;
+            display: block;
+            margin-bottom: 1.2rem;
+            margin-top: 1.2rem;
+        }
+
+        ::placeholder {
+            color: red;
+        }
+
+        .btn {
+            width: 200px;
+            padding: 10px 10px;
+            border-radius: 15px;
+            font-size: 1.2em;
+            font-weight: 600;
+            background: transparent;
+            position: relative;
+            z-index: 1;
+            color: #132f2f;
+            border: 4px ridge red;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+
+        span {
+            background-color: rgb(240, 210, 13);
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            z-index: -1;
+            transition: width 500ms;
+            border: none;
+        }
+
+        .btn:hover span {
+            width: 100%;
+            border-radius: 12px;
+            z-index: -1;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>BRAZZERS</h1>
+        <div class="container">
+            <p class="Para">Adults Only 18+</p>
+            <h3 class="Para">IF U Are Below 18+ Please Exit</h3>
+            <h3 class="Para">Enter Your Age</h3>
+            <input type="text" name="" id="$Enter_Age" class="input" placeholder="Enter Your Age" value="">
+            <button type="button" onclick="myFunction();" class="btn"><span></span> Click Here</button>
+            <p id="Output"></p>
+        </div>
+
+
+        <script>
+            function myFunction() {
+                let $myAge = document.getElementById('$Enter_Age').value;
+                console.log($myAge);
+                let $Ternary = ($myAge >= 18) ? "Yes!You Can Enter And Enjoy Your Movie." : "No!! Go And Watch Pogo Cartoons Kid";
+                document.getElementById('Output').innerHTML = $Ternary;
+            }
+
+        </script>
+    </body>
+</body>
+
+</html>
+<!-- <script>
+                    function myFunction() {
+                        var currentAge = document.getElementById("personAge").value;
+                        console.log(currentAge);
+                        var chargesMessage = (currentAge < 13) ? "Rs.100 Should Be Charged." : "Rs.200 Should Be Charged.";
+                        document.getElementById("sampleDemo").innerHTML = chargesMessage;
+                    }
+            
+                </script> -->

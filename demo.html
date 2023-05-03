@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(138, 143, 129);
+            margin: auto;
+            border: 10px ridge rgb(117, 0, 128);
+            border-radius: 32px;
+            border-left: 10px ridge goldenrod;
+            border-right: 10px ridge goldenrod;
+        }
+
+        #input_1 {
+            margin: auto;
+            display: block;
+            margin-top: 12px;
+            outline: none;
+            border: 2px solid purple;
+            border-radius: 6px;
+        }
+
+        #Btn {
+            margin: auto;
+            display: block;
+            margin-top: 12px;
+            outline: none;
+            border: 2px solid purple;
+            border-radius: 6px;
+            background-color: goldenrod;
+            color: aliceblue;
+            width: 100px;
+            cursor: pointer;
+            transition: all 1s;
+
+        }
+
+        #Btn:hover {
+            background-color: white;
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        #show {
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="submit" name="" id="input" value="Click" onclick="Input()">
+    <p id="Demo"></p>
+    <p id="Demo-1"></p>
+    <p id="Demo-2"></p>
+    <p id="Demo-3"></p>
+    <p id="Demo-4"></p>
+    <p id="Demo-5"></p>
+    <script src="demo.js"></script><br><br>
+    <div class="container">
+        <h1>Search</h1>
+        <input type="text" name="" id="input_1" value=''>
+        <button type="button" id="Btn" onclick="Ternary()">ClICK</button>
+        <p id="show"></p>
+    </div>
+</body>
+
+</html>

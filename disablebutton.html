@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        color: blueviolet;
+        font-size: 3rem;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+        padding: 50px;
+      }
+      #btn-1,
+      #btn-2 {
+        margin: 30px;
+        font-size: larger;
+        border-radius: 12px;
+        padding: 10px;
+        cursor: pointer;
+        transition: 1s;
+      }
+      #btn-2:hover {
+        background-color: blue;
+        color: aliceblue;
+      }
+      /* #btn-1:hover {
+        background-color: red;
+        color: white;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Disable Button in Javascript</h1>
+    <div class="container">
+      <button type="button" id="btn-1">Enable Button</button>
+      <button type="button" id="btn-2">Click to Disable Button</button>
+    </div>
+    <script>
+      btn1 = document.getElementById("btn-1");
+      btn2 = document.getElementById("btn-2");
+      kanom = false;
+      btn2.addEventListener("click", () => {
+        kanom = !kanom;
+        btn1.disabled = kanom;
+        btn1 = document.getElementById("btn-1").innerHTML = "Disabled";
+        btn1 = document.getElementById("btn-1").style.color = "red";
+        // btn2.toggle();
+      });
+
+      // btn1 = document.getElementById("btn1");
+      // btn2 = document.getElementById("btn2");
+      // isDisabled = false;
+      // btn2.addEventListner("click", function () {
+      //   isDisabled = !isDisabled;
+      //   btn1.disabled = isDisabled;
+      // });
+    </script>
+  </body>
+</html>

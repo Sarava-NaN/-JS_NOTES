@@ -7,7 +7,7 @@ var msg = "hello my name is " + name + " and i was born on " + dob + " i'm learn
 // alert(msg);
 // logging
 console.log(msg);
-// concatenation example two "strings" merge
+// concatenation example two "strings" merge:+:+:+:+:+:
 let $text1 = "hello";
 let $text2 = "World!";
 const Result = $text1.concat(" " + $text2);
@@ -24,19 +24,19 @@ document.getElementById("div").style.width = "1000px";
 JS Rules;
 1.variables could,nt store with keywords;
 2.variables Not start with numbers;
-3.variables not start spacing _use underscore or $;
-4.its case sensitive
+3.variables not start spacing _use underscore or $ or CamelCase;
+4.its case sensitive-ex FirstName and firstName are diffrent
 */
 // VARIABLE KEYWORDS
-//var-is a old keyword
-//let-is a new keyword
-//const-is a keyword
+//var-is a old keyword 1995-2015-u must use this in older browsers
+//let-is a new keyword added in 2015
+//const-is a keyword for constant values ex DateofBirth
 //Javascript Datatypes-
 /*
 primitive types / reference type
  1."string"            Object
  2.integer/number2,2.33   Array
- 3.booleantrue,false       Function
+ 3.boolean/true,false       Function
  4.undefined
  5.null
 */

@@ -26,11 +26,10 @@ let x = 100;
 //Equality Operators
 console.log(x === 100);
 //Relational Operators
-
 console.log(1 > x)//Greaterthan
 console.log(1 < x)//less than
 console.log(x = ++x)
-console.log(--x, x++)
+console.log(--x, x++, x++)
 console.log(x);
 console.log(101 <= x);//lessthan or equal too
 console.log(100 >= x);//Greaterthan or equal too
@@ -59,7 +58,7 @@ let result = $Age >= 18 ? "Adult Ticket" : "Please EXIT";
 console.log(result)
 //Function in Ternary Operators-
 function $Event(Age) {
-    let $Age = 22;
+
     let $Evnt = Age >= 18 ? "Adult Ticket" : "Child Not Allowed"
     console.log($Evnt)
 }
@@ -68,6 +67,12 @@ $Event(18)
 $Event(17)
 $Event(13)
 $Event(38)
-
-
-
+//Ternary Operators
+function $porn(Age) {
+    let $Enter = 18;
+    let $Open = Age >= 18 ? "18+ Adult only Enter here" : "Please Exit and Go Watch Pogo"
+    console.log($Open);
+}
+$porn(22);
+$porn(18);
+$porn(17.9);
